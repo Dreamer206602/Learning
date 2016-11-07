@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:layout_margin="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawablePadding="5dp"
+            android:drawableLeft="@mipmap/thin_0001_compose_write_pencil_new"
+            android:text="自定义View"
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>
