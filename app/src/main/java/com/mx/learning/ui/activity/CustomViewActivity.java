@@ -1,5 +1,6 @@
-package com.mx.learning.ui;
+package com.mx.learning.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.SimpleClickListener;
 import com.mx.learning.R;
+import com.mx.learning.ui.activity.view.CustomeViewLearnActivity;
 import com.mx.learning.ui.adapter.CustomViewAdapter;
 
 import java.util.ArrayList;
@@ -34,6 +36,7 @@ public class CustomViewActivity extends AppCompatActivity {
     }
 
     private void initData() {
+        mStrings.add("自定义View初始化");
         mStrings.add("启动页动画");
         mStrings.add("绚丽钟表1");
         mStrings.add("绚丽钟表2");
@@ -50,6 +53,7 @@ public class CustomViewActivity extends AppCompatActivity {
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 switch (position){
                     case 0:
+                        startActivity(new Intent(CustomViewActivity.this, CustomeViewLearnActivity.class));
                         break;
                 }
             }
