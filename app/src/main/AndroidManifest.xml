@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".ui.activity.view.CustomeViewLearnActivity">
         </activity>
+        <activity android:name=".ui.activity.view.CountTimerActivity">
+        </activity>
     </application>
 
 </manifest>

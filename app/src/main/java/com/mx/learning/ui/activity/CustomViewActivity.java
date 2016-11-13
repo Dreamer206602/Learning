@@ -10,6 +10,7 @@ import android.view.View;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.SimpleClickListener;
 import com.mx.learning.R;
+import com.mx.learning.ui.activity.view.CountTimerActivity;
 import com.mx.learning.ui.activity.view.CustomeViewLearnActivity;
 import com.mx.learning.ui.adapter.CustomViewAdapter;
 
@@ -54,6 +55,9 @@ public class CustomViewActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         startActivity(new Intent(CustomViewActivity.this, CustomeViewLearnActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(CustomViewActivity.this, CountTimerActivity.class));
                         break;
                 }
             }
