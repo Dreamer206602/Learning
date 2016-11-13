@@ -24,12 +24,12 @@ import com.mx.learning.R;
 public class CounterDownView extends View {
     public static final String TAG=CounterDownView.class.getSimpleName();
 
-    public static final int BACKGROUND_COLOR=0X50555555;
+    public static final int BACKGROUND_COLOR=0x50555555;
     public static final float BORDER_WIDTH=15F;
     public static final int BORDER_COLOR=0xff6ADBFE;
     public static final String TEXT="跳过广告";
     public static final float TEXT_SIZE=50F;
-    public static final int TEXT_COLOR=0XFFFFFF;
+    public static final int TEXT_COLOR=0xFFFFFF;
 
     private int backgroundColor;
     private float borderWidth;
@@ -43,13 +43,13 @@ public class CounterDownView extends View {
     private Paint borderPaint;
     private float progress=135;
     private StaticLayout staticLayout;
-    private CountDownListener mCountDownListener;
+    public CountDownListener mCountDownListener;
 
     public void setCountDownListener(CountDownListener countDownListener) {
         mCountDownListener = countDownListener;
     }
 
-    interface  CountDownListener{
+   public interface  CountDownListener{
         void onStartCountDown();
         void onFinishCountDown();
     }
