@@ -2,6 +2,7 @@ package com.mx.learning.ui.activity.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
@@ -15,7 +16,7 @@ public class LoadingViewActivity extends AppCompatActivity {
 
     @Bind(R.id.progressBar)
     SeekBar mProgressBar;
-    @Bind(R.id.loading_view)
+    @Bind(R.id.loadView)
     LoadingView mLoadingView;
     @Bind(R.id.btn_click)
     Button btnClick;
@@ -42,6 +43,13 @@ public class LoadingViewActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        btnClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
             }
         });
