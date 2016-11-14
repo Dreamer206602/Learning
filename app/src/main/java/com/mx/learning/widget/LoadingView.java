@@ -191,6 +191,7 @@ public class LoadingView extends View  {
                 invalidate();
             }
         });
+        progressAnimator.start();
 
     }
 
