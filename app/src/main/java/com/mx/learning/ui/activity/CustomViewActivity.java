@@ -12,6 +12,7 @@ import com.chad.library.adapter.base.listener.SimpleClickListener;
 import com.mx.learning.R;
 import com.mx.learning.ui.activity.view.CountTimerActivity;
 import com.mx.learning.ui.activity.view.CustomeViewLearnActivity;
+import com.mx.learning.ui.activity.view.LoadingViewActivity;
 import com.mx.learning.ui.adapter.CustomViewAdapter;
 
 import java.util.ArrayList;
@@ -58,6 +59,10 @@ public class CustomViewActivity extends AppCompatActivity {
                         break;
                     case 1:
                         startActivity(new Intent(CustomViewActivity.this, CountTimerActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(CustomViewActivity.this, LoadingViewActivity.class));
+
                         break;
                 }
             }
